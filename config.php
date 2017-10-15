@@ -42,14 +42,14 @@ try {
 class Mon {
 		public $day_name = 'Monday';
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Monday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Monday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -101,14 +101,14 @@ class Tue {
 
 		public $day_name = 'Tuesday';
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Tuesday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Tuesday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -159,14 +159,14 @@ class Wed {
 
 		public $day_name = 'Wednesday';
 
-		public function create($event, $time)
+				public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Wednesday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Wednesday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -217,14 +217,14 @@ class Thu {
 
 		public $day_name = 'Thursday';
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Thursday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Thursday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -276,14 +276,14 @@ class Fri {
 
 		public $day_name = 'Friday';
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Friday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Friday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -337,14 +337,14 @@ class Sat {
 		public $day_name = 'Saturday';
 		public $array = array();
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Saturday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Saturday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';
@@ -396,14 +396,14 @@ class Sun {
 
 		public $day_name = 'Sunday';
 
-		public function create($event, $time)
+		public function create($event, $time, $ampm)
 		{
 			$date = date("Y-m-d H:i:s");
 			$modified = date("Y-m-d H:i:s");
 			$status = 'awaiting';
 			if(!empty($event) && !empty($time))
 			{
-				$create = Sunday::create(array('today' => $date, 'time' => $time, 'event' => $event, 'status' => $status));
+				$create = Sunday::create(array('today' => $date, 'time' => $time, 'ampm' => $ampm, 'event' => $event, 'status' => $status));
 				if(!$create)
 				{
 					$message = 'Event or Time had an error or was empty';

@@ -2932,6 +2932,20 @@ class Time {
 				break;
 		}
 	}
+		public function ampm($input)
+		{
+			switch ($input) {
+				case 'am':
+					return "a.m.";
+					break;
+				case 'pm':
+					return "p.m.";
+					break;
+				default:
+					return $input = 'a.m';
+					break;
+			}
+		}
 
 }
 
