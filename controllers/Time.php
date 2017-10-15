@@ -67,7 +67,7 @@ class Time {
 	 //////////////////
 	 // two oclock
 	 public $two_oclock = array('two_oclock','2:00');
-	 public $two_zero_two = array('two_zero_two','2:01');
+	 public $two_zero_one = array('two_zero_one','2:01');
 	 public $two_zero_two = array('two_zero_two','2:02');
 	 public $two_zero_three = array('two_zero_three','2:03');
 	 public $two_zero_four = array('two_zero_four','2:04');
@@ -87,7 +87,7 @@ class Time {
 	 public $two_eighteen = array('two_eighteen', '2:18');
 	 public $two_nineteen = array('two_nineteen', '2:19');
 	 public $two_twenty = array('two_twenty', '2:20');
-	 public $two_twenty_two = array('two_twenty_two', '2:21');
+	 public $two_twenty_one = array('two_twenty_one', '2:21');
 	 public $two_twenty_two = array('two_twenty_two', '2:22');
 	 public $two_twenty_three = array('two_twenty_three', '2:23');
 	 public $two_twenty_four = array('two_twenty_four', '2:24');
@@ -97,7 +97,7 @@ class Time {
 	 public $two_twenty_eight = array('two_twenty_eight', '2:28');
 	 public $two_twenty_nine = array('two_twenty_nine', '2:29');
 	 public $two_thirty = array('two_thirty', '2:30');
-	 public $two_thirty_two = array('two_thirty_two', '2:31');
+	 public $two_thirty_one = array('two_thirty_one', '2:31');
 	 public $two_thirty_two = array('two_thirty_two', '2:32');
 	 public $two_thirty_three = array('two_thirty_three', '2:33');
 	 public $two_thirty_four = array('two_thirty_four', '2:34');
@@ -107,7 +107,7 @@ class Time {
 	 public $two_thirty_eight = array('two_thirty_eight', '2:38');
 	 public $two_thirty_nine = array('two_thirty_nine', '2:39');
 	 public $two_fourty = array('two_fourty', '2:40');
-	 public $two_fourty_two = array('two_fourty_two', '2:41');
+	 public $two_fourty_one = array('two_fourty_one', '2:41');
 	 public $two_fourty_two = array('two_fourty_two', '2:42');
 	 public $two_fourty_three = array('two_fourty_three', '2:43');
 	 public $two_fourty_four = array('two_fourty_four', '2:44');
@@ -117,7 +117,7 @@ class Time {
 	 public $two_fourty_eight = array('two_fourty_eight', '2:48');
 	 public $two_fourty_nine = array('two_fourty_nine', '2:49');
 	 public $two_fifty = array('two_fifty', '2:50');
-	 public $two_fifty_two = array('two_fifty_two', '2:51');
+	 public $two_fifty_one = array('two_fifty_one', '2:51');
 	 public $two_fifty_two = array('two_fifty_two', '2:52');
 	 public $two_fifty_three = array('two_fifty_three', '2:53');
 	 public $two_fifty_four = array('two_fifty_four', '2:54');
@@ -762,10 +762,2176 @@ class Time {
 	 // end four oclock
 	 //////////////////
 	 // five oclock
-	 public function returnByInput($input)
-	 {
-	 	if(is_array())
-	 }
+	
+	public function inputToTime($input)
+	{
+		switch ($input) {
+			case $this->one_oclock[0]:
+				return $this->one_oclock[1];
+				break;
+			case $this->one_zero_one[0]:
+				return $this->one_zero_one[1];
+				break;
+			case $this->one_zero_two[0]:
+				return $this->one_zero_two[1];
+				break;
+			case $this->one_zero_three[0]:
+				return $this->one_zero_three[1];
+				break;
+			case $this->one_zero_four[0]:
+				return $this->one_zero_four[1];
+				break;
+			case $this->one_zero_five[0]:
+				return $this->one_zero_five[1];
+				break;
+			case $this->one_zero_six[0]:
+				return $this->one_zero_six[1];
+				break;
+			case $this->one_zero_seven[0]:
+				return $this->one_zero_seven[1];
+				break;
+			case $this->one_zero_eight[0]:
+				return $this->one_zero_eight[1];
+				break;
+			case $this->one_zero_nine[0]:
+				return $this->one_zero_nine[1];
+				break;
+			case $this->one_ten[0]:
+				return $this->one_ten[1];
+				break;
+			case $this->one_eleven[0]:
+				return $this->one_eleven[1];
+				break;
+			case $this->one_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->one_thirteen[0]:
+				return $this->one_thirteen[1];
+				break;
+			case $this->one_fourteen[0]:
+				return $this->one_fourteen[1];
+				break;
+			case $this->one_fifteen[0]:
+				return $this->one_fifteen[1];
+				break;
+			case $this->one_sixteen[0]:
+				return $this->one_sixteen[1];
+				break;
+			case $this->one_seventeen[0]:
+				return $this->one_seventeen[1];
+				break;
+			case $this->one_eighteen[0]:
+				return $this->one_eighteen[1];
+				break;
+			case $this->one_nineteen[0]:
+				return $this->one_nineteen[1];
+				break;
+			case $this->one_twenty[0]:
+				return $this->one_twenty[1];
+				break;
+			case $this->one_twenty_one[0]:
+				return $this->one_twenty_one[1];
+				break;
+			case $this->one_twenty_two[0]:
+				return $this->one_twenty_two[1];
+				break;
+			case $this->one_twenty_three[0]:
+				return $this->one_twenty_three[1];
+				break;
+			case $this->one_twenty_four[0]:
+				return $this->one_twenty_four[1];
+				break;
+			case $this->one_twenty_five[0]:
+				return $this->one_twenty_five[1];
+				break;
+			case $this->one_twenty_six[0]:
+				return $this->one_twenty_six[1];
+				break;
+			case $this->one_twenty_seven[0]:
+				return $this->one_twenty_seven[1];
+				break;
+			case $this->one_twenty_eight[0]:
+				return $this->one_twenty_eight[1];
+				break;
+			case $this->one_twenty_nine[0]:
+				return $this->one_twenty_nine[1];
+				break;
+			case $this->one_thirty[0]:
+				return $this->one_thirty[1];
+				break;
+			case $this->one_thirty_one[0]:
+				return $this->one_thirty_one[1];
+				break;
+			case $this->one_thirty_two[0]:
+				return $this->one_thirty_two[1];
+				break;
+			case $this->one_thirty_three[0]:
+				return $this->one_thirty_three[1];
+				break;
+			case $this->one_thirty_four[0]:
+				return $this->one_thirty_four[1];
+				break;
+			case $this->one_thirty_five[0]:
+				return $this->one_thirty_five[1];
+				break;
+			case $this->one_thirty_six[0]:
+				return $this->one_thirty_six[1];
+				break;
+			case $this->one_thirty_seven[0]:
+				return $this->one_thirty_seven[1];
+				break;
+			case $this->one_thirty_eight[0]:
+				return $this->one_thirty_eight[1];
+				break;
+			case $this->one_thirty_nine[0]:
+				return $this->one_thirty_nine[1];
+				break;
+			case $this->one_fourty[0]:
+				return $this->one_fourty[1];
+				break;
+			case $this->one_fourty_one[0]:
+				return $this->one_fourty_one[1];
+				break;
+			case $this->one_fourty_two[0]:
+				return $this->one_fourty_two[1];
+				break;
+			case $this->one_fourty_three[0]:
+				return $this->one_fourty_three[1];
+				break;
+			case $this->one_fourty_four[0]:
+				return $this->one_fourty_four[1];
+				break;
+			case $this->one_fourty_five[0]:
+				return $this->one_fourty_five[1];
+				break;
+			case $this->one_fourty_six[0]:
+				return $this->one_fourty_six[1];
+				break;
+			case $this->one_fourty_seven[0]:
+				return $this->one_fourty_seven[1];
+				break;
+			case $this->one_fourty_eight[0]:
+				return $this->one_fourty_eight[1];
+				break;
+			case $this->one_fourty_nine[0]:
+				return $this->one_nine[1];
+				break;
+			case $this->one_fifty[0]:
+				return $this->one_fifty[1];
+				break;
+			case $this->one_fifty_one[0]:
+				return $this->one_fifty_one[1];
+				break;
+			case $this->one_fifty_two[0]:
+				return $this->one_fifty_two[1];
+				break;
+			case $this->one_fifty_three[0]:
+				return $this->one_fifty_three[1];
+				break;
+			case $this->one_fifty_four[0]:
+				return $this->one_fifty_four[1];
+				break;
+			case $this->one_fifty_five[0]:
+				return $this->one_fifty_five[1];
+				break;
+			case $this->one_fifty_six[0]:
+				return $this->one_fifty_six[1];
+				break;
+			case $this->one_fifty_seven[0]:
+				return $this->one_seven[1];
+				break;
+			case $this->one_fifty_eight[0]:
+				return $this->one_fifty_eight[1];
+				break;
+			case $this->one_fifty_nine[0]:
+				return $this->one_fifty_nine[1];
+				break;
+			case $this->two_oclock[0]:
+				return $this->two_oclock[1];
+				break;
+			case $this->two_zero_one[0]:
+				return $this->two_zero_one[1];
+				break;
+			case $this->two_zero_two[0]:
+				return $this->two_zero_two[1];
+				break;
+			case $this->two_zero_three[0]:
+				return $this->two_zero_three[1];
+				break;
+			case $this->two_zero_four[0]:
+				return $this->two_zero_four[1];
+				break;
+			case $this->two_zero_five[0]:
+				return $this->two_zero_five[1];
+				break;
+			case $this->two_zero_six[0]:
+				return $this->two_zero_six[1];
+				break;
+			case $this->two_zero_seven[0]:
+				return $this->two_zero_seven[1];
+				break;
+			case $this->two_zero_eight[0]:
+				return $this->two_zero_eight[1];
+				break;
+			case $this->two_zero_nine[0]:
+				return $this->two_zero_nine[1];
+				break;
+			case $this->two_ten[0]:
+				return $this->two_ten[1];
+				break;
+			case $this->two_eleven[0]:
+				return $this->two_eleven[1];
+				break;
+			case $this->two_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->two_thirteen[0]:
+				return $this->two_thirteen[1];
+				break;
+			case $this->two_fourteen[0]:
+				return $this->two_fourteen[1];
+				break;
+			case $this->two_fifteen[0]:
+				return $this->two_fifteen[1];
+				break;
+			case $this->two_sixteen[0]:
+				return $this->two_sixteen[1];
+				break;
+			case $this->two_seventeen[0]:
+				return $this->two_seventeen[1];
+				break;
+			case $this->two_eighteen[0]:
+				return $this->two_eighteen[1];
+				break;
+			case $this->two_nineteen[0]:
+				return $this->two_nineteen[1];
+				break;
+			case $this->two_twenty[0]:
+				return $this->two_twenty[1];
+				break;
+			case $this->two_twenty_one[0]:
+				return $this->two_twenty_one[1];
+				break;
+			case $this->two_twenty_two[0]:
+				return $this->two_twenty_two[1];
+				break;
+			case $this->two_twenty_three[0]:
+				return $this->two_twenty_three[1];
+				break;
+			case $this->two_twenty_four[0]:
+				return $this->two_twenty_four[1];
+				break;
+			case $this->two_twenty_five[0]:
+				return $this->two_twenty_five[1];
+				break;
+			case $this->two_twenty_six[0]:
+				return $this->two_twenty_six[1];
+				break;
+			case $this->two_twenty_seven[0]:
+				return $this->two_twenty_seven[1];
+				break;
+			case $this->two_twenty_eight[0]:
+				return $this->two_twenty_eight[1];
+				break;
+			case $this->two_twenty_nine[0]:
+				return $this->two_twenty_nine[1];
+				break;
+			case $this->two_thirty[0]:
+				return $this->two_thirty[1];
+				break;
+			case $this->two_thirty_one[0]:
+				return $this->two_thirty_one[1];
+				break;
+			case $this->two_thirty_two[0]:
+				return $this->two_thirty_two[1];
+				break;
+			case $this->two_thirty_three[0]:
+				return $this->two_thirty_three[1];
+				break;
+			case $this->two_thirty_four[0]:
+				return $this->two_thirty_four[1];
+				break;
+			case $this->two_thirty_five[0]:
+				return $this->two_thirty_five[1];
+				break;
+			case $this->two_thirty_six[0]:
+				return $this->two_thirty_six[1];
+				break;
+			case $this->two_thirty_seven[0]:
+				return $this->two_thirty_seven[1];
+				break;
+			case $this->two_thirty_eight[0]:
+				return $this->two_thirty_eight[1];
+				break;
+			case $this->two_thirty_nine[0]:
+				return $this->two_thirty_nine[1];
+				break;
+			case $this->two_fourty[0]:
+				return $this->two_fourty[1];
+				break;
+			case $this->two_fourty_one[0]:
+				return $this->two_fourty_one[1];
+				break;
+			case $this->two_fourty_two[0]:
+				return $this->two_fourty_two[1];
+				break;
+			case $this->two_fourty_three[0]:
+				return $this->two_fourty_three[1];
+				break;
+			case $this->two_fourty_four[0]:
+				return $this->two_fourty_four[1];
+				break;
+			case $this->two_fourty_five[0]:
+				return $this->two_fourty_five[1];
+				break;
+			case $this->two_fourty_six[0]:
+				return $this->two_fourty_six[1];
+				break;
+			case $this->two_fourty_seven[0]:
+				return $this->two_fourty_seven[1];
+				break;
+			case $this->two_fourty_eight[0]:
+				return $this->two_fourty_eight[1];
+				break;
+			case $this->two_fourty_nine[0]:
+				return $this->two_nine[1];
+				break;
+			case $this->two_fifty[0]:
+				return $this->two_fifty[1];
+				break;
+			case $this->two_fifty_one[0]:
+				return $this->two_fifty_one[1];
+				break;
+			case $this->two_fifty_two[0]:
+				return $this->two_fifty_two[1];
+				break;
+			case $this->two_fifty_three[0]:
+				return $this->two_fifty_three[1];
+				break;
+			case $this->two_fifty_four[0]:
+				return $this->two_fifty_four[1];
+				break;
+			case $this->two_fifty_five[0]:
+				return $this->two_fifty_five[1];
+				break;
+			case $this->two_fifty_six[0]:
+				return $this->two_fifty_six[1];
+				break;
+			case $this->two_fifty_seven[0]:
+				return $this->two_seven[1];
+				break;
+			case $this->two_fifty_eight[0]:
+				return $this->two_fifty_eight[1];
+				break;
+			case $this->two_fifty_nine[0]:
+				return $this->two_fifty_nine[1];
+				break;
+				case $this->three_oclock[0]:
+				return $this->three_oclock[1];
+				break;
+			case $this->three_zero_one[0]:
+				return $this->three_zero_one[1];
+				break;
+			case $this->three_zero_two[0]:
+				return $this->three_zero_two[1];
+				break;
+			case $this->three_zero_three[0]:
+				return $this->three_zero_three[1];
+				break;
+			case $this->three_zero_four[0]:
+				return $this->three_zero_four[1];
+				break;
+			case $this->three_zero_five[0]:
+				return $this->three_zero_five[1];
+				break;
+			case $this->three_zero_six[0]:
+				return $this->three_zero_six[1];
+				break;
+			case $this->three_zero_seven[0]:
+				return $this->three_zero_seven[1];
+				break;
+			case $this->three_zero_eight[0]:
+				return $this->three_zero_eight[1];
+				break;
+			case $this->three_zero_nine[0]:
+				return $this->three_zero_nine[1];
+				break;
+			case $this->three_ten[0]:
+				return $this->three_ten[1];
+				break;
+			case $this->three_eleven[0]:
+				return $this->three_eleven[1];
+				break;
+			case $this->three_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->three_thirteen[0]:
+				return $this->three_thirteen[1];
+				break;
+			case $this->three_fourteen[0]:
+				return $this->three_fourteen[1];
+				break;
+			case $this->three_fifteen[0]:
+				return $this->three_fifteen[1];
+				break;
+			case $this->three_sixteen[0]:
+				return $this->three_sixteen[1];
+				break;
+			case $this->three_seventeen[0]:
+				return $this->three_seventeen[1];
+				break;
+			case $this->three_eighteen[0]:
+				return $this->three_eighteen[1];
+				break;
+			case $this->three_nineteen[0]:
+				return $this->three_nineteen[1];
+				break;
+			case $this->three_twenty[0]:
+				return $this->three_twenty[1];
+				break;
+			case $this->three_twenty_one[0]:
+				return $this->three_twenty_one[1];
+				break;
+			case $this->three_twenty_two[0]:
+				return $this->three_twenty_two[1];
+				break;
+			case $this->three_twenty_three[0]:
+				return $this->three_twenty_three[1];
+				break;
+			case $this->three_twenty_four[0]:
+				return $this->three_twenty_four[1];
+				break;
+			case $this->three_twenty_five[0]:
+				return $this->three_twenty_five[1];
+				break;
+			case $this->three_twenty_six[0]:
+				return $this->three_twenty_six[1];
+				break;
+			case $this->three_twenty_seven[0]:
+				return $this->three_twenty_seven[1];
+				break;
+			case $this->three_twenty_eight[0]:
+				return $this->three_twenty_eight[1];
+				break;
+			case $this->three_twenty_nine[0]:
+				return $this->three_twenty_nine[1];
+				break;
+			case $this->three_thirty[0]:
+				return $this->three_thirty[1];
+				break;
+			case $this->three_thirty_one[0]:
+				return $this->three_thirty_one[1];
+				break;
+			case $this->three_thirty_two[0]:
+				return $this->three_thirty_two[1];
+				break;
+			case $this->three_thirty_three[0]:
+				return $this->three_thirty_three[1];
+				break;
+			case $this->three_thirty_four[0]:
+				return $this->three_thirty_four[1];
+				break;
+			case $this->three_thirty_five[0]:
+				return $this->three_thirty_five[1];
+				break;
+			case $this->three_thirty_six[0]:
+				return $this->three_thirty_six[1];
+				break;
+			case $this->three_thirty_seven[0]:
+				return $this->three_thirty_seven[1];
+				break;
+			case $this->three_thirty_eight[0]:
+				return $this->three_thirty_eight[1];
+				break;
+			case $this->three_thirty_nine[0]:
+				return $this->three_thirty_nine[1];
+				break;
+			case $this->three_fourty[0]:
+				return $this->three_fourty[1];
+				break;
+			case $this->three_fourty_one[0]:
+				return $this->three_fourty_one[1];
+				break;
+			case $this->three_fourty_two[0]:
+				return $this->three_fourty_two[1];
+				break;
+			case $this->three_fourty_three[0]:
+				return $this->three_fourty_three[1];
+				break;
+			case $this->three_fourty_four[0]:
+				return $this->three_fourty_four[1];
+				break;
+			case $this->three_fourty_five[0]:
+				return $this->three_fourty_five[1];
+				break;
+			case $this->three_fourty_six[0]:
+				return $this->three_fourty_six[1];
+				break;
+			case $this->three_fourty_seven[0]:
+				return $this->three_fourty_seven[1];
+				break;
+			case $this->three_fourty_eight[0]:
+				return $this->three_fourty_eight[1];
+				break;
+			case $this->three_fourty_nine[0]:
+				return $this->three_nine[1];
+				break;
+			case $this->three_fifty[0]:
+				return $this->three_fifty[1];
+				break;
+			case $this->three_fifty_one[0]:
+				return $this->three_fifty_one[1];
+				break;
+			case $this->three_fifty_two[0]:
+				return $this->three_fifty_two[1];
+				break;
+			case $this->three_fifty_three[0]:
+				return $this->three_fifty_three[1];
+				break;
+			case $this->three_fifty_four[0]:
+				return $this->three_fifty_four[1];
+				break;
+			case $this->three_fifty_five[0]:
+				return $this->three_fifty_five[1];
+				break;
+			case $this->three_fifty_six[0]:
+				return $this->three_fifty_six[1];
+				break;
+			case $this->three_fifty_seven[0]:
+				return $this->three_seven[1];
+				break;
+			case $this->three_fifty_eight[0]:
+				return $this->three_fifty_eight[1];
+				break;
+			case $this->three_fifty_nine[0]:
+				return $this->three_fifty_nine[1];
+				break;
+				case $this->four_oclock[0]:
+				return $this->four_oclock[1];
+				break;
+			case $this->four_zero_one[0]:
+				return $this->four_zero_one[1];
+				break;
+			case $this->four_zero_two[0]:
+				return $this->four_zero_two[1];
+				break;
+			case $this->four_zero_three[0]:
+				return $this->four_zero_three[1];
+				break;
+			case $this->four_zero_four[0]:
+				return $this->four_zero_four[1];
+				break;
+			case $this->four_zero_five[0]:
+				return $this->four_zero_five[1];
+				break;
+			case $this->four_zero_six[0]:
+				return $this->four_zero_six[1];
+				break;
+			case $this->four_zero_seven[0]:
+				return $this->four_zero_seven[1];
+				break;
+			case $this->four_zero_eight[0]:
+				return $this->four_zero_eight[1];
+				break;
+			case $this->four_zero_nine[0]:
+				return $this->four_zero_nine[1];
+				break;
+			case $this->four_ten[0]:
+				return $this->four_ten[1];
+				break;
+			case $this->four_eleven[0]:
+				return $this->four_eleven[1];
+				break;
+			case $this->four_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->four_thirteen[0]:
+				return $this->four_thirteen[1];
+				break;
+			case $this->four_fourteen[0]:
+				return $this->four_fourteen[1];
+				break;
+			case $this->four_fifteen[0]:
+				return $this->four_fifteen[1];
+				break;
+			case $this->four_sixteen[0]:
+				return $this->four_sixteen[1];
+				break;
+			case $this->four_seventeen[0]:
+				return $this->four_seventeen[1];
+				break;
+			case $this->four_eighteen[0]:
+				return $this->four_eighteen[1];
+				break;
+			case $this->four_nineteen[0]:
+				return $this->four_nineteen[1];
+				break;
+			case $this->four_twenty[0]:
+				return $this->four_twenty[1];
+				break;
+			case $this->four_twenty_one[0]:
+				return $this->four_twenty_one[1];
+				break;
+			case $this->four_twenty_two[0]:
+				return $this->four_twenty_two[1];
+				break;
+			case $this->four_twenty_three[0]:
+				return $this->four_twenty_three[1];
+				break;
+			case $this->four_twenty_four[0]:
+				return $this->four_twenty_four[1];
+				break;
+			case $this->four_twenty_five[0]:
+				return $this->four_twenty_five[1];
+				break;
+			case $this->four_twenty_six[0]:
+				return $this->four_twenty_six[1];
+				break;
+			case $this->four_twenty_seven[0]:
+				return $this->four_twenty_seven[1];
+				break;
+			case $this->four_twenty_eight[0]:
+				return $this->four_twenty_eight[1];
+				break;
+			case $this->four_twenty_nine[0]:
+				return $this->four_twenty_nine[1];
+				break;
+			case $this->four_thirty[0]:
+				return $this->four_thirty[1];
+				break;
+			case $this->four_thirty_one[0]:
+				return $this->four_thirty_one[1];
+				break;
+			case $this->four_thirty_two[0]:
+				return $this->four_thirty_two[1];
+				break;
+			case $this->four_thirty_three[0]:
+				return $this->four_thirty_three[1];
+				break;
+			case $this->four_thirty_four[0]:
+				return $this->four_thirty_four[1];
+				break;
+			case $this->four_thirty_five[0]:
+				return $this->four_thirty_five[1];
+				break;
+			case $this->four_thirty_six[0]:
+				return $this->four_thirty_six[1];
+				break;
+			case $this->four_thirty_seven[0]:
+				return $this->four_thirty_seven[1];
+				break;
+			case $this->four_thirty_eight[0]:
+				return $this->four_thirty_eight[1];
+				break;
+			case $this->four_thirty_nine[0]:
+				return $this->four_thirty_nine[1];
+				break;
+			case $this->four_fourty[0]:
+				return $this->four_fourty[1];
+				break;
+			case $this->four_fourty_one[0]:
+				return $this->four_fourty_one[1];
+				break;
+			case $this->four_fourty_two[0]:
+				return $this->four_fourty_two[1];
+				break;
+			case $this->four_fourty_three[0]:
+				return $this->four_fourty_three[1];
+				break;
+			case $this->four_fourty_four[0]:
+				return $this->four_fourty_four[1];
+				break;
+			case $this->four_fourty_five[0]:
+				return $this->four_fourty_five[1];
+				break;
+			case $this->four_fourty_six[0]:
+				return $this->four_fourty_six[1];
+				break;
+			case $this->four_fourty_seven[0]:
+				return $this->four_fourty_seven[1];
+				break;
+			case $this->four_fourty_eight[0]:
+				return $this->four_fourty_eight[1];
+				break;
+			case $this->four_fourty_nine[0]:
+				return $this->four_nine[1];
+				break;
+			case $this->four_fifty[0]:
+				return $this->four_fifty[1];
+				break;
+			case $this->four_fifty_one[0]:
+				return $this->four_fifty_one[1];
+				break;
+			case $this->four_fifty_two[0]:
+				return $this->four_fifty_two[1];
+				break;
+			case $this->four_fifty_three[0]:
+				return $this->four_fifty_three[1];
+				break;
+			case $this->four_fifty_four[0]:
+				return $this->four_fifty_four[1];
+				break;
+			case $this->four_fifty_five[0]:
+				return $this->four_fifty_five[1];
+				break;
+			case $this->four_fifty_six[0]:
+				return $this->four_fifty_six[1];
+				break;
+			case $this->four_fifty_seven[0]:
+				return $this->four_seven[1];
+				break;
+			case $this->four_fifty_eight[0]:
+				return $this->four_fifty_eight[1];
+				break;
+			case $this->four_fifty_nine[0]:
+				return $this->four_fifty_nine[1];
+				break;
+				case $this->five_oclock[0]:
+				return $this->five_oclock[1];
+				break;
+			case $this->five_zero_one[0]:
+				return $this->five_zero_one[1];
+				break;
+			case $this->five_zero_two[0]:
+				return $this->five_zero_two[1];
+				break;
+			case $this->five_zero_three[0]:
+				return $this->five_zero_three[1];
+				break;
+			case $this->five_zero_four[0]:
+				return $this->five_zero_four[1];
+				break;
+			case $this->five_zero_five[0]:
+				return $this->five_zero_five[1];
+				break;
+			case $this->five_zero_six[0]:
+				return $this->five_zero_six[1];
+				break;
+			case $this->five_zero_seven[0]:
+				return $this->five_zero_seven[1];
+				break;
+			case $this->five_zero_eight[0]:
+				return $this->five_zero_eight[1];
+				break;
+			case $this->five_zero_nine[0]:
+				return $this->five_zero_nine[1];
+				break;
+			case $this->five_ten[0]:
+				return $this->five_ten[1];
+				break;
+			case $this->five_eleven[0]:
+				return $this->five_eleven[1];
+				break;
+			case $this->five_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->five_thirteen[0]:
+				return $this->five_thirteen[1];
+				break;
+			case $this->five_fourteen[0]:
+				return $this->five_fourteen[1];
+				break;
+			case $this->five_fifteen[0]:
+				return $this->five_fifteen[1];
+				break;
+			case $this->five_sixteen[0]:
+				return $this->five_sixteen[1];
+				break;
+			case $this->five_seventeen[0]:
+				return $this->five_seventeen[1];
+				break;
+			case $this->five_eighteen[0]:
+				return $this->five_eighteen[1];
+				break;
+			case $this->five_nineteen[0]:
+				return $this->five_nineteen[1];
+				break;
+			case $this->five_twenty[0]:
+				return $this->five_twenty[1];
+				break;
+			case $this->five_twenty_one[0]:
+				return $this->five_twenty_one[1];
+				break;
+			case $this->five_twenty_two[0]:
+				return $this->five_twenty_two[1];
+				break;
+			case $this->five_twenty_three[0]:
+				return $this->five_twenty_three[1];
+				break;
+			case $this->five_twenty_four[0]:
+				return $this->five_twenty_four[1];
+				break;
+			case $this->five_twenty_five[0]:
+				return $this->five_twenty_five[1];
+				break;
+			case $this->five_twenty_six[0]:
+				return $this->five_twenty_six[1];
+				break;
+			case $this->five_twenty_seven[0]:
+				return $this->five_twenty_seven[1];
+				break;
+			case $this->five_twenty_eight[0]:
+				return $this->five_twenty_eight[1];
+				break;
+			case $this->five_twenty_nine[0]:
+				return $this->five_twenty_nine[1];
+				break;
+			case $this->five_thirty[0]:
+				return $this->five_thirty[1];
+				break;
+			case $this->five_thirty_one[0]:
+				return $this->five_thirty_one[1];
+				break;
+			case $this->five_thirty_two[0]:
+				return $this->five_thirty_two[1];
+				break;
+			case $this->five_thirty_three[0]:
+				return $this->five_thirty_three[1];
+				break;
+			case $this->five_thirty_four[0]:
+				return $this->five_thirty_four[1];
+				break;
+			case $this->five_thirty_five[0]:
+				return $this->five_thirty_five[1];
+				break;
+			case $this->five_thirty_six[0]:
+				return $this->five_thirty_six[1];
+				break;
+			case $this->five_thirty_seven[0]:
+				return $this->five_thirty_seven[1];
+				break;
+			case $this->five_thirty_eight[0]:
+				return $this->five_thirty_eight[1];
+				break;
+			case $this->five_thirty_nine[0]:
+				return $this->five_thirty_nine[1];
+				break;
+			case $this->five_fourty[0]:
+				return $this->five_fourty[1];
+				break;
+			case $this->five_fourty_one[0]:
+				return $this->five_fourty_one[1];
+				break;
+			case $this->five_fourty_two[0]:
+				return $this->five_fourty_two[1];
+				break;
+			case $this->five_fourty_three[0]:
+				return $this->five_fourty_three[1];
+				break;
+			case $this->five_fourty_four[0]:
+				return $this->five_fourty_four[1];
+				break;
+			case $this->five_fourty_five[0]:
+				return $this->five_fourty_five[1];
+				break;
+			case $this->five_fourty_six[0]:
+				return $this->five_fourty_six[1];
+				break;
+			case $this->five_fourty_seven[0]:
+				return $this->five_fourty_seven[1];
+				break;
+			case $this->five_fourty_eight[0]:
+				return $this->five_fourty_eight[1];
+				break;
+			case $this->five_fourty_nine[0]:
+				return $this->five_nine[1];
+				break;
+			case $this->five_fifty[0]:
+				return $this->five_fifty[1];
+				break;
+			case $this->five_fifty_one[0]:
+				return $this->five_fifty_one[1];
+				break;
+			case $this->five_fifty_two[0]:
+				return $this->five_fifty_two[1];
+				break;
+			case $this->five_fifty_three[0]:
+				return $this->five_fifty_three[1];
+				break;
+			case $this->five_fifty_four[0]:
+				return $this->five_fifty_four[1];
+				break;
+			case $this->five_fifty_five[0]:
+				return $this->five_fifty_five[1];
+				break;
+			case $this->five_fifty_six[0]:
+				return $this->five_fifty_six[1];
+				break;
+			case $this->five_fifty_seven[0]:
+				return $this->five_seven[1];
+				break;
+			case $this->five_fifty_eight[0]:
+				return $this->five_fifty_eight[1];
+				break;
+			case $this->five_fifty_nine[0]:
+				return $this->five_fifty_nine[1];
+				break;
+				case $this->six_oclock[0]:
+				return $this->six_oclock[1];
+				break;
+			case $this->six_zero_one[0]:
+				return $this->six_zero_one[1];
+				break;
+			case $this->six_zero_two[0]:
+				return $this->six_zero_two[1];
+				break;
+			case $this->six_zero_three[0]:
+				return $this->six_zero_three[1];
+				break;
+			case $this->six_zero_four[0]:
+				return $this->six_zero_four[1];
+				break;
+			case $this->six_zero_five[0]:
+				return $this->six_zero_five[1];
+				break;
+			case $this->six_zero_six[0]:
+				return $this->six_zero_six[1];
+				break;
+			case $this->six_zero_seven[0]:
+				return $this->six_zero_seven[1];
+				break;
+			case $this->six_zero_eight[0]:
+				return $this->six_zero_eight[1];
+				break;
+			case $this->six_zero_nine[0]:
+				return $this->six_zero_nine[1];
+				break;
+			case $this->six_ten[0]:
+				return $this->six_ten[1];
+				break;
+			case $this->six_eleven[0]:
+				return $this->six_eleven[1];
+				break;
+			case $this->six_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->six_thirteen[0]:
+				return $this->six_thirteen[1];
+				break;
+			case $this->six_fourteen[0]:
+				return $this->six_fourteen[1];
+				break;
+			case $this->six_fifteen[0]:
+				return $this->six_fifteen[1];
+				break;
+			case $this->six_sixteen[0]:
+				return $this->six_sixteen[1];
+				break;
+			case $this->six_seventeen[0]:
+				return $this->six_seventeen[1];
+				break;
+			case $this->six_eighteen[0]:
+				return $this->six_eighteen[1];
+				break;
+			case $this->six_nineteen[0]:
+				return $this->six_nineteen[1];
+				break;
+			case $this->six_twenty[0]:
+				return $this->six_twenty[1];
+				break;
+			case $this->six_twenty_one[0]:
+				return $this->six_twenty_one[1];
+				break;
+			case $this->six_twenty_two[0]:
+				return $this->six_twenty_two[1];
+				break;
+			case $this->six_twenty_three[0]:
+				return $this->six_twenty_three[1];
+				break;
+			case $this->six_twenty_four[0]:
+				return $this->six_twenty_four[1];
+				break;
+			case $this->six_twenty_five[0]:
+				return $this->six_twenty_five[1];
+				break;
+			case $this->six_twenty_six[0]:
+				return $this->six_twenty_six[1];
+				break;
+			case $this->six_twenty_seven[0]:
+				return $this->six_twenty_seven[1];
+				break;
+			case $this->six_twenty_eight[0]:
+				return $this->six_twenty_eight[1];
+				break;
+			case $this->six_twenty_nine[0]:
+				return $this->six_twenty_nine[1];
+				break;
+			case $this->six_thirty[0]:
+				return $this->six_thirty[1];
+				break;
+			case $this->six_thirty_one[0]:
+				return $this->six_thirty_one[1];
+				break;
+			case $this->six_thirty_two[0]:
+				return $this->six_thirty_two[1];
+				break;
+			case $this->six_thirty_three[0]:
+				return $this->six_thirty_three[1];
+				break;
+			case $this->six_thirty_four[0]:
+				return $this->six_thirty_four[1];
+				break;
+			case $this->six_thirty_five[0]:
+				return $this->six_thirty_five[1];
+				break;
+			case $this->six_thirty_six[0]:
+				return $this->six_thirty_six[1];
+				break;
+			case $this->six_thirty_seven[0]:
+				return $this->six_thirty_seven[1];
+				break;
+			case $this->six_thirty_eight[0]:
+				return $this->six_thirty_eight[1];
+				break;
+			case $this->six_thirty_nine[0]:
+				return $this->six_thirty_nine[1];
+				break;
+			case $this->six_fourty[0]:
+				return $this->six_fourty[1];
+				break;
+			case $this->six_fourty_one[0]:
+				return $this->six_fourty_one[1];
+				break;
+			case $this->six_fourty_two[0]:
+				return $this->six_fourty_two[1];
+				break;
+			case $this->six_fourty_three[0]:
+				return $this->six_fourty_three[1];
+				break;
+			case $this->six_fourty_four[0]:
+				return $this->six_fourty_four[1];
+				break;
+			case $this->six_fourty_five[0]:
+				return $this->six_fourty_five[1];
+				break;
+			case $this->six_fourty_six[0]:
+				return $this->six_fourty_six[1];
+				break;
+			case $this->six_fourty_seven[0]:
+				return $this->six_fourty_seven[1];
+				break;
+			case $this->six_fourty_eight[0]:
+				return $this->six_fourty_eight[1];
+				break;
+			case $this->six_fourty_nine[0]:
+				return $this->six_nine[1];
+				break;
+			case $this->six_fifty[0]:
+				return $this->six_fifty[1];
+				break;
+			case $this->six_fifty_one[0]:
+				return $this->six_fifty_one[1];
+				break;
+			case $this->six_fifty_two[0]:
+				return $this->six_fifty_two[1];
+				break;
+			case $this->six_fifty_three[0]:
+				return $this->six_fifty_three[1];
+				break;
+			case $this->six_fifty_four[0]:
+				return $this->six_fifty_four[1];
+				break;
+			case $this->six_fifty_five[0]:
+				return $this->six_fifty_five[1];
+				break;
+			case $this->six_fifty_six[0]:
+				return $this->six_fifty_six[1];
+				break;
+			case $this->six_fifty_seven[0]:
+				return $this->six_seven[1];
+				break;
+			case $this->six_fifty_eight[0]:
+				return $this->six_fifty_eight[1];
+				break;
+			case $this->six_fifty_nine[0]:
+				return $this->six_fifty_nine[1];
+				break;
+			case $this->seven_oclock[0]:
+				return $this->seven_oclock[1];
+				break;
+			case $this->seven_zero_one[0]:
+				return $this->seven_zero_one[1];
+				break;
+			case $this->seven_zero_two[0]:
+				return $this->seven_zero_two[1];
+				break;
+			case $this->seven_zero_three[0]:
+				return $this->seven_zero_three[1];
+				break;
+			case $this->seven_zero_four[0]:
+				return $this->seven_zero_four[1];
+				break;
+			case $this->seven_zero_five[0]:
+				return $this->seven_zero_five[1];
+				break;
+			case $this->seven_zero_six[0]:
+				return $this->seven_zero_six[1];
+				break;
+			case $this->seven_zero_seven[0]:
+				return $this->seven_zero_seven[1];
+				break;
+			case $this->seven_zero_eight[0]:
+				return $this->seven_zero_eight[1];
+				break;
+			case $this->seven_zero_nine[0]:
+				return $this->seven_zero_nine[1];
+				break;
+			case $this->seven_ten[0]:
+				return $this->seven_ten[1];
+				break;
+			case $this->seven_eleven[0]:
+				return $this->seven_eleven[1];
+				break;
+			case $this->seven_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->seven_thirteen[0]:
+				return $this->seven_thirteen[1];
+				break;
+			case $this->seven_fourteen[0]:
+				return $this->seven_fourteen[1];
+				break;
+			case $this->seven_fifteen[0]:
+				return $this->seven_fifteen[1];
+				break;
+			case $this->seven_sixteen[0]:
+				return $this->seven_sixteen[1];
+				break;
+			case $this->seven_seventeen[0]:
+				return $this->seven_seventeen[1];
+				break;
+			case $this->seven_eighteen[0]:
+				return $this->seven_eighteen[1];
+				break;
+			case $this->seven_nineteen[0]:
+				return $this->seven_nineteen[1];
+				break;
+			case $this->seven_twenty[0]:
+				return $this->seven_twenty[1];
+				break;
+			case $this->seven_twenty_one[0]:
+				return $this->seven_twenty_one[1];
+				break;
+			case $this->seven_twenty_two[0]:
+				return $this->seven_twenty_two[1];
+				break;
+			case $this->seven_twenty_three[0]:
+				return $this->seven_twenty_three[1];
+				break;
+			case $this->seven_twenty_four[0]:
+				return $this->seven_twenty_four[1];
+				break;
+			case $this->seven_twenty_five[0]:
+				return $this->seven_twenty_five[1];
+				break;
+			case $this->seven_twenty_six[0]:
+				return $this->seven_twenty_six[1];
+				break;
+			case $this->seven_twenty_seven[0]:
+				return $this->seven_twenty_seven[1];
+				break;
+			case $this->seven_twenty_eight[0]:
+				return $this->seven_twenty_eight[1];
+				break;
+			case $this->seven_twenty_nine[0]:
+				return $this->seven_twenty_nine[1];
+				break;
+			case $this->seven_thirty[0]:
+				return $this->seven_thirty[1];
+				break;
+			case $this->seven_thirty_one[0]:
+				return $this->seven_thirty_one[1];
+				break;
+			case $this->seven_thirty_two[0]:
+				return $this->seven_thirty_two[1];
+				break;
+			case $this->seven_thirty_three[0]:
+				return $this->seven_thirty_three[1];
+				break;
+			case $this->seven_thirty_four[0]:
+				return $this->seven_thirty_four[1];
+				break;
+			case $this->seven_thirty_five[0]:
+				return $this->seven_thirty_five[1];
+				break;
+			case $this->seven_thirty_six[0]:
+				return $this->seven_thirty_six[1];
+				break;
+			case $this->seven_thirty_seven[0]:
+				return $this->seven_thirty_seven[1];
+				break;
+			case $this->seven_thirty_eight[0]:
+				return $this->seven_thirty_eight[1];
+				break;
+			case $this->seven_thirty_nine[0]:
+				return $this->seven_thirty_nine[1];
+				break;
+			case $this->seven_fourty[0]:
+				return $this->seven_fourty[1];
+				break;
+			case $this->seven_fourty_one[0]:
+				return $this->seven_fourty_one[1];
+				break;
+			case $this->seven_fourty_two[0]:
+				return $this->seven_fourty_two[1];
+				break;
+			case $this->seven_fourty_three[0]:
+				return $this->seven_fourty_three[1];
+				break;
+			case $this->seven_fourty_four[0]:
+				return $this->seven_fourty_four[1];
+				break;
+			case $this->seven_fourty_five[0]:
+				return $this->seven_fourty_five[1];
+				break;
+			case $this->seven_fourty_six[0]:
+				return $this->seven_fourty_six[1];
+				break;
+			case $this->seven_fourty_seven[0]:
+				return $this->seven_fourty_seven[1];
+				break;
+			case $this->seven_fourty_eight[0]:
+				return $this->seven_fourty_eight[1];
+				break;
+			case $this->seven_fourty_nine[0]:
+				return $this->seven_nine[1];
+				break;
+			case $this->seven_fifty[0]:
+				return $this->seven_fifty[1];
+				break;
+			case $this->seven_fifty_one[0]:
+				return $this->seven_fifty_one[1];
+				break;
+			case $this->seven_fifty_two[0]:
+				return $this->seven_fifty_two[1];
+				break;
+			case $this->seven_fifty_three[0]:
+				return $this->seven_fifty_three[1];
+				break;
+			case $this->seven_fifty_four[0]:
+				return $this->seven_fifty_four[1];
+				break;
+			case $this->seven_fifty_five[0]:
+				return $this->seven_fifty_five[1];
+				break;
+			case $this->seven_fifty_six[0]:
+				return $this->seven_fifty_six[1];
+				break;
+			case $this->seven_fifty_seven[0]:
+				return $this->seven_seven[1];
+				break;
+			case $this->seven_fifty_eight[0]:
+				return $this->seven_fifty_eight[1];
+				break;
+			case $this->seven_fifty_nine[0]:
+				return $this->seven_fifty_nine[1];
+				break;
+				case $this->eight_oclock[0]:
+				return $this->eight_oclock[1];
+				break;
+			case $this->eight_zero_one[0]:
+				return $this->eight_zero_one[1];
+				break;
+			case $this->eight_zero_two[0]:
+				return $this->eight_zero_two[1];
+				break;
+			case $this->eight_zero_three[0]:
+				return $this->eight_zero_three[1];
+				break;
+			case $this->eight_zero_four[0]:
+				return $this->eight_zero_four[1];
+				break;
+			case $this->eight_zero_five[0]:
+				return $this->eight_zero_five[1];
+				break;
+			case $this->eight_zero_six[0]:
+				return $this->eight_zero_six[1];
+				break;
+			case $this->eight_zero_seven[0]:
+				return $this->eight_zero_seven[1];
+				break;
+			case $this->eight_zero_eight[0]:
+				return $this->eight_zero_eight[1];
+				break;
+			case $this->eight_zero_nine[0]:
+				return $this->eight_zero_nine[1];
+				break;
+			case $this->eight_ten[0]:
+				return $this->eight_ten[1];
+				break;
+			case $this->eight_eleven[0]:
+				return $this->eight_eleven[1];
+				break;
+			case $this->eight_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->eight_thirteen[0]:
+				return $this->eight_thirteen[1];
+				break;
+			case $this->eight_fourteen[0]:
+				return $this->eight_fourteen[1];
+				break;
+			case $this->eight_fifteen[0]:
+				return $this->eight_fifteen[1];
+				break;
+			case $this->eight_sixteen[0]:
+				return $this->eight_sixteen[1];
+				break;
+			case $this->eight_seventeen[0]:
+				return $this->eight_seventeen[1];
+				break;
+			case $this->eight_eighteen[0]:
+				return $this->eight_eighteen[1];
+				break;
+			case $this->eight_nineteen[0]:
+				return $this->eight_nineteen[1];
+				break;
+			case $this->eight_twenty[0]:
+				return $this->eight_twenty[1];
+				break;
+			case $this->eight_twenty_one[0]:
+				return $this->eight_twenty_one[1];
+				break;
+			case $this->eight_twenty_two[0]:
+				return $this->eight_twenty_two[1];
+				break;
+			case $this->eight_twenty_three[0]:
+				return $this->eight_twenty_three[1];
+				break;
+			case $this->eight_twenty_four[0]:
+				return $this->eight_twenty_four[1];
+				break;
+			case $this->eight_twenty_five[0]:
+				return $this->eight_twenty_five[1];
+				break;
+			case $this->eight_twenty_six[0]:
+				return $this->eight_twenty_six[1];
+				break;
+			case $this->eight_twenty_seven[0]:
+				return $this->eight_twenty_seven[1];
+				break;
+			case $this->eight_twenty_eight[0]:
+				return $this->eight_twenty_eight[1];
+				break;
+			case $this->eight_twenty_nine[0]:
+				return $this->eight_twenty_nine[1];
+				break;
+			case $this->eight_thirty[0]:
+				return $this->eight_thirty[1];
+				break;
+			case $this->eight_thirty_one[0]:
+				return $this->eight_thirty_one[1];
+				break;
+			case $this->eight_thirty_two[0]:
+				return $this->eight_thirty_two[1];
+				break;
+			case $this->eight_thirty_three[0]:
+				return $this->eight_thirty_three[1];
+				break;
+			case $this->eight_thirty_four[0]:
+				return $this->eight_thirty_four[1];
+				break;
+			case $this->eight_thirty_five[0]:
+				return $this->eight_thirty_five[1];
+				break;
+			case $this->eight_thirty_six[0]:
+				return $this->eight_thirty_six[1];
+				break;
+			case $this->eight_thirty_seven[0]:
+				return $this->eight_thirty_seven[1];
+				break;
+			case $this->eight_thirty_eight[0]:
+				return $this->eight_thirty_eight[1];
+				break;
+			case $this->eight_thirty_nine[0]:
+				return $this->eight_thirty_nine[1];
+				break;
+			case $this->eight_fourty[0]:
+				return $this->eight_fourty[1];
+				break;
+			case $this->eight_fourty_one[0]:
+				return $this->eight_fourty_one[1];
+				break;
+			case $this->eight_fourty_two[0]:
+				return $this->eight_fourty_two[1];
+				break;
+			case $this->eight_fourty_three[0]:
+				return $this->eight_fourty_three[1];
+				break;
+			case $this->eight_fourty_four[0]:
+				return $this->eight_fourty_four[1];
+				break;
+			case $this->eight_fourty_five[0]:
+				return $this->eight_fourty_five[1];
+				break;
+			case $this->eight_fourty_six[0]:
+				return $this->eight_fourty_six[1];
+				break;
+			case $this->eight_fourty_seven[0]:
+				return $this->eight_fourty_seven[1];
+				break;
+			case $this->eight_fourty_eight[0]:
+				return $this->eight_fourty_eight[1];
+				break;
+			case $this->eight_fourty_nine[0]:
+				return $this->eight_nine[1];
+				break;
+			case $this->eight_fifty[0]:
+				return $this->eight_fifty[1];
+				break;
+			case $this->eight_fifty_one[0]:
+				return $this->eight_fifty_one[1];
+				break;
+			case $this->eight_fifty_two[0]:
+				return $this->eight_fifty_two[1];
+				break;
+			case $this->eight_fifty_three[0]:
+				return $this->eight_fifty_three[1];
+				break;
+			case $this->eight_fifty_four[0]:
+				return $this->eight_fifty_four[1];
+				break;
+			case $this->eight_fifty_five[0]:
+				return $this->eight_fifty_five[1];
+				break;
+			case $this->eight_fifty_six[0]:
+				return $this->eight_fifty_six[1];
+				break;
+			case $this->eight_fifty_seven[0]:
+				return $this->eight_seven[1];
+				break;
+			case $this->eight_fifty_eight[0]:
+				return $this->eight_fifty_eight[1];
+				break;
+			case $this->eight_fifty_nine[0]:
+				return $this->eight_fifty_nine[1];
+				break;
+			case $this->nine_oclock[0]:
+				return $this->nine_oclock[1];
+				break;
+			case $this->nine_zero_one[0]:
+				return $this->nine_zero_one[1];
+				break;
+			case $this->nine_zero_two[0]:
+				return $this->nine_zero_two[1];
+				break;
+			case $this->nine_zero_three[0]:
+				return $this->nine_zero_three[1];
+				break;
+			case $this->nine_zero_four[0]:
+				return $this->nine_zero_four[1];
+				break;
+			case $this->nine_zero_five[0]:
+				return $this->nine_zero_five[1];
+				break;
+			case $this->nine_zero_six[0]:
+				return $this->nine_zero_six[1];
+				break;
+			case $this->nine_zero_seven[0]:
+				return $this->nine_zero_seven[1];
+				break;
+			case $this->nine_zero_eight[0]:
+				return $this->nine_zero_eight[1];
+				break;
+			case $this->nine_zero_nine[0]:
+				return $this->nine_zero_nine[1];
+				break;
+			case $this->nine_ten[0]:
+				return $this->nine_ten[1];
+				break;
+			case $this->nine_eleven[0]:
+				return $this->nine_eleven[1];
+				break;
+			case $this->nine_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->nine_thirteen[0]:
+				return $this->nine_thirteen[1];
+				break;
+			case $this->nine_fourteen[0]:
+				return $this->nine_fourteen[1];
+				break;
+			case $this->nine_fifteen[0]:
+				return $this->nine_fifteen[1];
+				break;
+			case $this->nine_sixteen[0]:
+				return $this->nine_sixteen[1];
+				break;
+			case $this->nine_seventeen[0]:
+				return $this->nine_seventeen[1];
+				break;
+			case $this->nine_eighteen[0]:
+				return $this->nine_eighteen[1];
+				break;
+			case $this->nine_nineteen[0]:
+				return $this->nine_nineteen[1];
+				break;
+			case $this->nine_twenty[0]:
+				return $this->nine_twenty[1];
+				break;
+			case $this->nine_twenty_one[0]:
+				return $this->nine_twenty_one[1];
+				break;
+			case $this->nine_twenty_two[0]:
+				return $this->nine_twenty_two[1];
+				break;
+			case $this->nine_twenty_three[0]:
+				return $this->nine_twenty_three[1];
+				break;
+			case $this->nine_twenty_four[0]:
+				return $this->nine_twenty_four[1];
+				break;
+			case $this->nine_twenty_five[0]:
+				return $this->nine_twenty_five[1];
+				break;
+			case $this->nine_twenty_six[0]:
+				return $this->nine_twenty_six[1];
+				break;
+			case $this->nine_twenty_seven[0]:
+				return $this->nine_twenty_seven[1];
+				break;
+			case $this->nine_twenty_eight[0]:
+				return $this->nine_twenty_eight[1];
+				break;
+			case $this->nine_twenty_nine[0]:
+				return $this->nine_twenty_nine[1];
+				break;
+			case $this->nine_thirty[0]:
+				return $this->nine_thirty[1];
+				break;
+			case $this->nine_thirty_one[0]:
+				return $this->nine_thirty_one[1];
+				break;
+			case $this->nine_thirty_two[0]:
+				return $this->nine_thirty_two[1];
+				break;
+			case $this->nine_thirty_three[0]:
+				return $this->nine_thirty_three[1];
+				break;
+			case $this->nine_thirty_four[0]:
+				return $this->nine_thirty_four[1];
+				break;
+			case $this->nine_thirty_five[0]:
+				return $this->nine_thirty_five[1];
+				break;
+			case $this->nine_thirty_six[0]:
+				return $this->nine_thirty_six[1];
+				break;
+			case $this->nine_thirty_seven[0]:
+				return $this->nine_thirty_seven[1];
+				break;
+			case $this->nine_thirty_eight[0]:
+				return $this->nine_thirty_eight[1];
+				break;
+			case $this->nine_thirty_nine[0]:
+				return $this->nine_thirty_nine[1];
+				break;
+			case $this->nine_fourty[0]:
+				return $this->nine_fourty[1];
+				break;
+			case $this->nine_fourty_one[0]:
+				return $this->nine_fourty_one[1];
+				break;
+			case $this->nine_fourty_two[0]:
+				return $this->nine_fourty_two[1];
+				break;
+			case $this->nine_fourty_three[0]:
+				return $this->nine_fourty_three[1];
+				break;
+			case $this->nine_fourty_four[0]:
+				return $this->nine_fourty_four[1];
+				break;
+			case $this->nine_fourty_five[0]:
+				return $this->nine_fourty_five[1];
+				break;
+			case $this->nine_fourty_six[0]:
+				return $this->nine_fourty_six[1];
+				break;
+			case $this->nine_fourty_seven[0]:
+				return $this->nine_fourty_seven[1];
+				break;
+			case $this->nine_fourty_eight[0]:
+				return $this->nine_fourty_eight[1];
+				break;
+			case $this->nine_fourty_nine[0]:
+				return $this->nine_nine[1];
+				break;
+			case $this->nine_fifty[0]:
+				return $this->nine_fifty[1];
+				break;
+			case $this->nine_fifty_one[0]:
+				return $this->nine_fifty_one[1];
+				break;
+			case $this->nine_fifty_two[0]:
+				return $this->nine_fifty_two[1];
+				break;
+			case $this->nine_fifty_three[0]:
+				return $this->nine_fifty_three[1];
+				break;
+			case $this->nine_fifty_four[0]:
+				return $this->nine_fifty_four[1];
+				break;
+			case $this->nine_fifty_five[0]:
+				return $this->nine_fifty_five[1];
+				break;
+			case $this->nine_fifty_six[0]:
+				return $this->nine_fifty_six[1];
+				break;
+			case $this->nine_fifty_seven[0]:
+				return $this->nine_seven[1];
+				break;
+			case $this->nine_fifty_eight[0]:
+				return $this->nine_fifty_eight[1];
+				break;
+			case $this->nine_fifty_nine[0]:
+				return $this->nine_fifty_nine[1];
+				break;
+				case $this->ten_oclock[0]:
+				return $this->ten_oclock[1];
+				break;
+			case $this->ten_zero_one[0]:
+				return $this->ten_zero_one[1];
+				break;
+			case $this->ten_zero_two[0]:
+				return $this->ten_zero_two[1];
+				break;
+			case $this->ten_zero_three[0]:
+				return $this->ten_zero_three[1];
+				break;
+			case $this->ten_zero_four[0]:
+				return $this->ten_zero_four[1];
+				break;
+			case $this->ten_zero_five[0]:
+				return $this->ten_zero_five[1];
+				break;
+			case $this->ten_zero_six[0]:
+				return $this->ten_zero_six[1];
+				break;
+			case $this->ten_zero_seven[0]:
+				return $this->ten_zero_seven[1];
+				break;
+			case $this->ten_zero_eight[0]:
+				return $this->ten_zero_eight[1];
+				break;
+			case $this->ten_zero_nine[0]:
+				return $this->ten_zero_nine[1];
+				break;
+			case $this->ten_ten[0]:
+				return $this->ten_ten[1];
+				break;
+			case $this->ten_eleven[0]:
+				return $this->ten_eleven[1];
+				break;
+			case $this->ten_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->ten_thirteen[0]:
+				return $this->ten_thirteen[1];
+				break;
+			case $this->ten_fourteen[0]:
+				return $this->ten_fourteen[1];
+				break;
+			case $this->ten_fifteen[0]:
+				return $this->ten_fifteen[1];
+				break;
+			case $this->ten_sixteen[0]:
+				return $this->ten_sixteen[1];
+				break;
+			case $this->ten_seventeen[0]:
+				return $this->ten_seventeen[1];
+				break;
+			case $this->ten_eighteen[0]:
+				return $this->ten_eighteen[1];
+				break;
+			case $this->ten_nineteen[0]:
+				return $this->ten_nineteen[1];
+				break;
+			case $this->ten_twenty[0]:
+				return $this->ten_twenty[1];
+				break;
+			case $this->ten_twenty_one[0]:
+				return $this->ten_twenty_one[1];
+				break;
+			case $this->ten_twenty_two[0]:
+				return $this->ten_twenty_two[1];
+				break;
+			case $this->ten_twenty_three[0]:
+				return $this->ten_twenty_three[1];
+				break;
+			case $this->ten_twenty_four[0]:
+				return $this->ten_twenty_four[1];
+				break;
+			case $this->ten_twenty_five[0]:
+				return $this->ten_twenty_five[1];
+				break;
+			case $this->ten_twenty_six[0]:
+				return $this->ten_twenty_six[1];
+				break;
+			case $this->ten_twenty_seven[0]:
+				return $this->ten_twenty_seven[1];
+				break;
+			case $this->ten_twenty_eight[0]:
+				return $this->ten_twenty_eight[1];
+				break;
+			case $this->ten_twenty_nine[0]:
+				return $this->ten_twenty_nine[1];
+				break;
+			case $this->ten_thirty[0]:
+				return $this->ten_thirty[1];
+				break;
+			case $this->ten_thirty_one[0]:
+				return $this->ten_thirty_one[1];
+				break;
+			case $this->ten_thirty_two[0]:
+				return $this->ten_thirty_two[1];
+				break;
+			case $this->ten_thirty_three[0]:
+				return $this->ten_thirty_three[1];
+				break;
+			case $this->ten_thirty_four[0]:
+				return $this->ten_thirty_four[1];
+				break;
+			case $this->ten_thirty_five[0]:
+				return $this->ten_thirty_five[1];
+				break;
+			case $this->ten_thirty_six[0]:
+				return $this->ten_thirty_six[1];
+				break;
+			case $this->ten_thirty_seven[0]:
+				return $this->ten_thirty_seven[1];
+				break;
+			case $this->ten_thirty_eight[0]:
+				return $this->ten_thirty_eight[1];
+				break;
+			case $this->ten_thirty_nine[0]:
+				return $this->ten_thirty_nine[1];
+				break;
+			case $this->ten_fourty[0]:
+				return $this->ten_fourty[1];
+				break;
+			case $this->ten_fourty_one[0]:
+				return $this->ten_fourty_one[1];
+				break;
+			case $this->ten_fourty_two[0]:
+				return $this->ten_fourty_two[1];
+				break;
+			case $this->ten_fourty_three[0]:
+				return $this->ten_fourty_three[1];
+				break;
+			case $this->ten_fourty_four[0]:
+				return $this->ten_fourty_four[1];
+				break;
+			case $this->ten_fourty_five[0]:
+				return $this->ten_fourty_five[1];
+				break;
+			case $this->ten_fourty_six[0]:
+				return $this->ten_fourty_six[1];
+				break;
+			case $this->ten_fourty_seven[0]:
+				return $this->ten_fourty_seven[1];
+				break;
+			case $this->ten_fourty_eight[0]:
+				return $this->ten_fourty_eight[1];
+				break;
+			case $this->ten_fourty_nine[0]:
+				return $this->ten_nine[1];
+				break;
+			case $this->ten_fifty[0]:
+				return $this->ten_fifty[1];
+				break;
+			case $this->ten_fifty_one[0]:
+				return $this->ten_fifty_one[1];
+				break;
+			case $this->ten_fifty_two[0]:
+				return $this->ten_fifty_two[1];
+				break;
+			case $this->ten_fifty_three[0]:
+				return $this->ten_fifty_three[1];
+				break;
+			case $this->ten_fifty_four[0]:
+				return $this->ten_fifty_four[1];
+				break;
+			case $this->ten_fifty_five[0]:
+				return $this->ten_fifty_five[1];
+				break;
+			case $this->ten_fifty_six[0]:
+				return $this->ten_fifty_six[1];
+				break;
+			case $this->ten_fifty_seven[0]:
+				return $this->ten_seven[1];
+				break;
+			case $this->ten_fifty_eight[0]:
+				return $this->ten_fifty_eight[1];
+				break;
+			case $this->ten_fifty_nine[0]:
+				return $this->ten_fifty_nine[1];
+				break;
+			case $this->eleven_oclock[0]:
+				return $this->eleven_oclock[1];
+				break;
+			case $this->eleven_zero_one[0]:
+				return $this->eleven_zero_one[1];
+				break;
+			case $this->eleven_zero_two[0]:
+				return $this->eleven_zero_two[1];
+				break;
+			case $this->eleven_zero_three[0]:
+				return $this->eleven_zero_three[1];
+				break;
+			case $this->eleven_zero_four[0]:
+				return $this->eleven_zero_four[1];
+				break;
+			case $this->eleven_zero_five[0]:
+				return $this->eleven_zero_five[1];
+				break;
+			case $this->eleven_zero_six[0]:
+				return $this->eleven_zero_six[1];
+				break;
+			case $this->eleven_zero_seven[0]:
+				return $this->eleven_zero_seven[1];
+				break;
+			case $this->eleven_zero_eight[0]:
+				return $this->eleven_zero_eight[1];
+				break;
+			case $this->eleven_zero_nine[0]:
+				return $this->eleven_zero_nine[1];
+				break;
+			case $this->eleven_ten[0]:
+				return $this->eleven_ten[1];
+				break;
+			case $this->eleven_eleven[0]:
+				return $this->eleven_eleven[1];
+				break;
+			case $this->eleven_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->eleven_thirteen[0]:
+				return $this->eleven_thirteen[1];
+				break;
+			case $this->eleven_fourteen[0]:
+				return $this->eleven_fourteen[1];
+				break;
+			case $this->eleven_fifteen[0]:
+				return $this->eleven_fifteen[1];
+				break;
+			case $this->eleven_sixteen[0]:
+				return $this->eleven_sixteen[1];
+				break;
+			case $this->eleven_seventeen[0]:
+				return $this->eleven_seventeen[1];
+				break;
+			case $this->eleven_eighteen[0]:
+				return $this->eleven_eighteen[1];
+				break;
+			case $this->eleven_nineteen[0]:
+				return $this->eleven_nineteen[1];
+				break;
+			case $this->eleven_twenty[0]:
+				return $this->eleven_twenty[1];
+				break;
+			case $this->eleven_twenty_one[0]:
+				return $this->eleven_twenty_one[1];
+				break;
+			case $this->eleven_twenty_two[0]:
+				return $this->eleven_twenty_two[1];
+				break;
+			case $this->eleven_twenty_three[0]:
+				return $this->eleven_twenty_three[1];
+				break;
+			case $this->eleven_twenty_four[0]:
+				return $this->eleven_twenty_four[1];
+				break;
+			case $this->eleven_twenty_five[0]:
+				return $this->eleven_twenty_five[1];
+				break;
+			case $this->eleven_twenty_six[0]:
+				return $this->eleven_twenty_six[1];
+				break;
+			case $this->eleven_twenty_seven[0]:
+				return $this->eleven_twenty_seven[1];
+				break;
+			case $this->eleven_twenty_eight[0]:
+				return $this->eleven_twenty_eight[1];
+				break;
+			case $this->eleven_twenty_nine[0]:
+				return $this->eleven_twenty_nine[1];
+				break;
+			case $this->eleven_thirty[0]:
+				return $this->eleven_thirty[1];
+				break;
+			case $this->eleven_thirty_one[0]:
+				return $this->eleven_thirty_one[1];
+				break;
+			case $this->eleven_thirty_two[0]:
+				return $this->eleven_thirty_two[1];
+				break;
+			case $this->eleven_thirty_three[0]:
+				return $this->eleven_thirty_three[1];
+				break;
+			case $this->eleven_thirty_four[0]:
+				return $this->eleven_thirty_four[1];
+				break;
+			case $this->eleven_thirty_five[0]:
+				return $this->eleven_thirty_five[1];
+				break;
+			case $this->eleven_thirty_six[0]:
+				return $this->eleven_thirty_six[1];
+				break;
+			case $this->eleven_thirty_seven[0]:
+				return $this->eleven_thirty_seven[1];
+				break;
+			case $this->eleven_thirty_eight[0]:
+				return $this->eleven_thirty_eight[1];
+				break;
+			case $this->eleven_thirty_nine[0]:
+				return $this->eleven_thirty_nine[1];
+				break;
+			case $this->eleven_fourty[0]:
+				return $this->eleven_fourty[1];
+				break;
+			case $this->eleven_fourty_one[0]:
+				return $this->eleven_fourty_one[1];
+				break;
+			case $this->eleven_fourty_two[0]:
+				return $this->eleven_fourty_two[1];
+				break;
+			case $this->eleven_fourty_three[0]:
+				return $this->eleven_fourty_three[1];
+				break;
+			case $this->eleven_fourty_four[0]:
+				return $this->eleven_fourty_four[1];
+				break;
+			case $this->eleven_fourty_five[0]:
+				return $this->eleven_fourty_five[1];
+				break;
+			case $this->eleven_fourty_six[0]:
+				return $this->eleven_fourty_six[1];
+				break;
+			case $this->eleven_fourty_seven[0]:
+				return $this->eleven_fourty_seven[1];
+				break;
+			case $this->eleven_fourty_eight[0]:
+				return $this->eleven_fourty_eight[1];
+				break;
+			case $this->eleven_fourty_nine[0]:
+				return $this->eleven_nine[1];
+				break;
+			case $this->eleven_fifty[0]:
+				return $this->eleven_fifty[1];
+				break;
+			case $this->eleven_fifty_one[0]:
+				return $this->eleven_fifty_one[1];
+				break;
+			case $this->eleven_fifty_two[0]:
+				return $this->eleven_fifty_two[1];
+				break;
+			case $this->eleven_fifty_three[0]:
+				return $this->eleven_fifty_three[1];
+				break;
+			case $this->eleven_fifty_four[0]:
+				return $this->eleven_fifty_four[1];
+				break;
+			case $this->eleven_fifty_five[0]:
+				return $this->eleven_fifty_five[1];
+				break;
+			case $this->eleven_fifty_six[0]:
+				return $this->eleven_fifty_six[1];
+				break;
+			case $this->eleven_fifty_seven[0]:
+				return $this->eleven_seven[1];
+				break;
+			case $this->eleven_fifty_eight[0]:
+				return $this->eleven_fifty_eight[1];
+				break;
+			case $this->eleven_fifty_nine[0]:
+				return $this->eleven_fifty_nine[1];
+				break;
+			case $this->twelve_oclock[0]:
+				return $this->twelve_oclock[1];
+				break;
+			case $this->twelve_zero_one[0]:
+				return $this->twelve_zero_one[1];
+				break;
+			case $this->twelve_zero_two[0]:
+				return $this->twelve_zero_two[1];
+				break;
+			case $this->twelve_zero_three[0]:
+				return $this->twelve_zero_three[1];
+				break;
+			case $this->twelve_zero_four[0]:
+				return $this->twelve_zero_four[1];
+				break;
+			case $this->twelve_zero_five[0]:
+				return $this->twelve_zero_five[1];
+				break;
+			case $this->twelve_zero_six[0]:
+				return $this->twelve_zero_six[1];
+				break;
+			case $this->twelve_zero_seven[0]:
+				return $this->twelve_zero_seven[1];
+				break;
+			case $this->twelve_zero_eight[0]:
+				return $this->twelve_zero_eight[1];
+				break;
+			case $this->twelve_zero_nine[0]:
+				return $this->twelve_zero_nine[1];
+				break;
+			case $this->twelve_ten[0]:
+				return $this->twelve_ten[1];
+				break;
+			case $this->twelve_eleven[0]:
+				return $this->twelve_eleven[1];
+				break;
+			case $this->twelve_twelve[0]:
+				return $this->twelve[1];
+				break;
+			case $this->twelve_thirteen[0]:
+				return $this->twelve_thirteen[1];
+				break;
+			case $this->twelve_fourteen[0]:
+				return $this->twelve_fourteen[1];
+				break;
+			case $this->twelve_fifteen[0]:
+				return $this->twelve_fifteen[1];
+				break;
+			case $this->twelve_sixteen[0]:
+				return $this->twelve_sixteen[1];
+				break;
+			case $this->twelve_seventeen[0]:
+				return $this->twelve_seventeen[1];
+				break;
+			case $this->twelve_eighteen[0]:
+				return $this->twelve_eighteen[1];
+				break;
+			case $this->twelve_nineteen[0]:
+				return $this->twelve_nineteen[1];
+				break;
+			case $this->twelve_twenty[0]:
+				return $this->twelve_twenty[1];
+				break;
+			case $this->twelve_twenty_one[0]:
+				return $this->twelve_twenty_one[1];
+				break;
+			case $this->twelve_twenty_two[0]:
+				return $this->twelve_twenty_two[1];
+				break;
+			case $this->twelve_twenty_three[0]:
+				return $this->twelve_twenty_three[1];
+				break;
+			case $this->twelve_twenty_four[0]:
+				return $this->twelve_twenty_four[1];
+				break;
+			case $this->twelve_twenty_five[0]:
+				return $this->twelve_twenty_five[1];
+				break;
+			case $this->twelve_twenty_six[0]:
+				return $this->twelve_twenty_six[1];
+				break;
+			case $this->twelve_twenty_seven[0]:
+				return $this->twelve_twenty_seven[1];
+				break;
+			case $this->twelve_twenty_eight[0]:
+				return $this->twelve_twenty_eight[1];
+				break;
+			case $this->twelve_twenty_nine[0]:
+				return $this->twelve_twenty_nine[1];
+				break;
+			case $this->twelve_thirty[0]:
+				return $this->twelve_thirty[1];
+				break;
+			case $this->twelve_thirty_one[0]:
+				return $this->twelve_thirty_one[1];
+				break;
+			case $this->twelve_thirty_two[0]:
+				return $this->twelve_thirty_two[1];
+				break;
+			case $this->twelve_thirty_three[0]:
+				return $this->twelve_thirty_three[1];
+				break;
+			case $this->twelve_thirty_four[0]:
+				return $this->twelve_thirty_four[1];
+				break;
+			case $this->twelve_thirty_five[0]:
+				return $this->twelve_thirty_five[1];
+				break;
+			case $this->twelve_thirty_six[0]:
+				return $this->twelve_thirty_six[1];
+				break;
+			case $this->twelve_thirty_seven[0]:
+				return $this->twelve_thirty_seven[1];
+				break;
+			case $this->twelve_thirty_eight[0]:
+				return $this->twelve_thirty_eight[1];
+				break;
+			case $this->twelve_thirty_nine[0]:
+				return $this->twelve_thirty_nine[1];
+				break;
+			case $this->twelve_fourty[0]:
+				return $this->twelve_fourty[1];
+				break;
+			case $this->twelve_fourty_one[0]:
+				return $this->twelve_fourty_one[1];
+				break;
+			case $this->twelve_fourty_two[0]:
+				return $this->twelve_fourty_two[1];
+				break;
+			case $this->twelve_fourty_three[0]:
+				return $this->twelve_fourty_three[1];
+				break;
+			case $this->twelve_fourty_four[0]:
+				return $this->twelve_fourty_four[1];
+				break;
+			case $this->twelve_fourty_five[0]:
+				return $this->twelve_fourty_five[1];
+				break;
+			case $this->twelve_fourty_six[0]:
+				return $this->twelve_fourty_six[1];
+				break;
+			case $this->twelve_fourty_seven[0]:
+				return $this->twelve_fourty_seven[1];
+				break;
+			case $this->twelve_fourty_eight[0]:
+				return $this->twelve_fourty_eight[1];
+				break;
+			case $this->twelve_fourty_nine[0]:
+				return $this->twelve_nine[1];
+				break;
+			case $this->twelve_fifty[0]:
+				return $this->twelve_fifty[1];
+				break;
+			case $this->twelve_fifty_one[0]:
+				return $this->twelve_fifty_one[1];
+				break;
+			case $this->twelve_fifty_two[0]:
+				return $this->twelve_fifty_two[1];
+				break;
+			case $this->twelve_fifty_three[0]:
+				return $this->twelve_fifty_three[1];
+				break;
+			case $this->twelve_fifty_four[0]:
+				return $this->twelve_fifty_four[1];
+				break;
+			case $this->twelve_fifty_five[0]:
+				return $this->twelve_fifty_five[1];
+				break;
+			case $this->twelve_fifty_six[0]:
+				return $this->twelve_fifty_six[1];
+				break;
+			case $this->twelve_fifty_seven[0]:
+				return $this->twelve_seven[1];
+				break;
+			case $this->twelve_fifty_eight[0]:
+				return $this->twelve_fifty_eight[1];
+				break;
+			case $this->twelve_fifty_nine[0]:
+				return $this->twelve_fifty_nine[1];
+				break;
+			default:
+				$input = "Please set a time";
+				return $input;
+				break;
+		}
+	}
 
 }
 

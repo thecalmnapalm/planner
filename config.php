@@ -19,8 +19,12 @@ $Friday = $models . '/Friday.php';
 $Saturday = $models . '/Saturday.php';
 $Sunday = $models . '/Sunday.php';
 
+// controllers
+$controllers = __DIR__ . '/controllers';
+$Time = $controllers . '/Time.php';
+
 try {
-	if(file_exists($Monday) || file_exists($Tuesday) || file_exists($Wednesday) || file_exists($Thursday) || file_exists($Friday) || file_exists($Saturday) || file_exists($Sunday))
+	if(file_exists($Monday) || file_exists($Tuesday) || file_exists($Wednesday) || file_exists($Thursday) || file_exists($Friday) || file_exists($Saturday) || file_exists($Sunday) || file_exists($Time))
 	{
 		require $Monday;
 		require $Tuesday;
@@ -29,6 +33,7 @@ try {
 		require $Friday;
 		require $Saturday;
 		require $Sunday;
+		require $Time;
 	}	
 } catch (Exception $e) {
 	echo 'Error! ',  $e->getMessage(), "\n";
@@ -457,10 +462,14 @@ class Sun {
 
 // $test->getSingleSatEvent(2);
 
-/*foreach($test->getAllSatEvents() as $event)
+foreach($test->getAllSatEvents() as $event)
 {
-	echo $event->event . "<br>";
-}*/
-$test->update(2, "Kristian is cool", "seven_thirteen");
+	$getTime = new Time();
+
+	echo "Time: " . $getTime->inputToTime($event->time) . " Event: " . $event->event . "<br />";
+}
+
+// $test->update(2, "Kristian is cool", "seven_thirteen");
+
 
 ?>
