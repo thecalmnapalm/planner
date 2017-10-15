@@ -60,7 +60,7 @@ class Mon {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Monday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -80,11 +80,7 @@ class Mon {
 		}
 		public function getAllMonEvents()
 		{
-			$all = Monday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
+			return $all = Monday::all();
 
 		}
 		public function getSingleMonEvent($event_id)
@@ -123,7 +119,7 @@ class Tue {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Tuesday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -143,12 +139,7 @@ class Tue {
 		}
 		public function getAllTueEvents()
 		{
-			$all = Tuesday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
-
+			return $all = Tuesday::all();
 		}
 		public function getSingleTueEvent($event_id)
 		{
@@ -186,7 +177,7 @@ class Wed {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Wednesday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -206,12 +197,7 @@ class Wed {
 		}
 		public function getAllWedEvents()
 		{
-			$all = Wednesday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
-
+			return $all = Wednesday::all();
 		}
 		public function getSingleWedEvent($event_id)
 		{
@@ -249,7 +235,7 @@ class Thu {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Thursday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -269,11 +255,7 @@ class Thu {
 		}
 		public function getAllThuEvents()
 		{
-			$all = Thursday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
+			return $all = Thursday::all();
 
 		}
 		public function getSingleThuEvent($event_id)
@@ -312,7 +294,7 @@ class Fri {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Friday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -332,11 +314,8 @@ class Fri {
 		}
 		public function getAllFriEvents()
 		{
-			$all = Friday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
+			
+			return $all = Friday::all();
 
 		}
 		public function getSingleFriEvent($event_id)
@@ -351,6 +330,7 @@ class Fri {
 class Sat {
 
 		public $day_name = 'Saturday';
+		public $array = array();
 
 		public function create($event, $time)
 		{
@@ -375,7 +355,7 @@ class Sat {
 		}
 		public function update($event_id, $event, $newtime)
 		{
-
+			$update = Saturday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -395,11 +375,7 @@ class Sat {
 		}
 		public function getAllSatEvents()
 		{
-			$all = Saturday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
+			return $all = Saturday::all();
 
 		}
 		public function getSingleSatEvent($event_id)
@@ -439,6 +415,7 @@ class Sun {
 		public function update($event_id, $event, $newtime)
 		{
 
+			$update = Sunday::find_by_id($event_id);
 			$update->modified = date("Y-m-d H:i:s");
 			$update->event = $event;
 			$update->time = $newtime;
@@ -459,10 +436,6 @@ class Sun {
 		public function getAllSunEvents()
 		{
 			$all = Sunday::all();
-			foreach($all as $events)
-			{
-				return $event = $events->event;
-			}
 
 		}
 		public function getSingleSunEvent($event_id)
@@ -476,12 +449,18 @@ class Sun {
 }
  $test = new Sat(); 
 
-/* $test->create('Kristian Rocks.', 'four_thirty_five');
+/* $test->create('Another test', 'six_fourty_six');
  if($test)
  {
  	echo '{"success":"Event for '.$test->day_name.' created!"}';
  }*/
 
-$test->getSingleSatEvent(2);
+// $test->getSingleSatEvent(2);
+
+/*foreach($test->getAllSatEvents() as $event)
+{
+	echo $event->event . "<br>";
+}*/
+$test->update(2, "Kristian is cool", "seven_thirteen");
 
 ?>
