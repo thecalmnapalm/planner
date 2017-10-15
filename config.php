@@ -1,5 +1,5 @@
 <?php 
-
+date_default_timezone_set('America/Denver');
 require_once 'vendor/autoload.php';
 
 ActiveRecord\Config::initialize(function($cfg)
@@ -35,6 +35,7 @@ try {
 }
 
 class Mon {
+		public $day_name = 'Monday';
 
 		public function create($event, $time)
 		{
@@ -88,7 +89,7 @@ class Mon {
 		}
 		public function getSingleMonEvent($event_id)
 		{
-			$doFind = Monday::find_by_id($event_id);
+			$doFind = Monday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
@@ -96,6 +97,8 @@ class Mon {
 		}
 }
 class Tue {
+
+		public $day_name = 'Tuesday';
 
 		public function create($event, $time)
 		{
@@ -138,7 +141,7 @@ class Tue {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllTueEvents()
 		{
 			$all = Tuesday::all();
 			foreach($all as $events)
@@ -147,9 +150,9 @@ class Tue {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleTueEvent($event_id)
 		{
-			$doFind = Tuesday::find_by_id($event_id);
+			$doFind = Tuesday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
@@ -157,6 +160,8 @@ class Tue {
 		}
 }
 class Wed {
+
+		public $day_name = 'Wednesday';
 
 		public function create($event, $time)
 		{
@@ -199,7 +204,7 @@ class Wed {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllWedEvents()
 		{
 			$all = Wednesday::all();
 			foreach($all as $events)
@@ -208,9 +213,9 @@ class Wed {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleWedEvent($event_id)
 		{
-			$doFind = Wednesday::find_by_id($event_id);
+			$doFind = Wednesday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
@@ -218,6 +223,8 @@ class Wed {
 		}
 }
 class Thu {
+
+		public $day_name = 'Thursday';
 
 		public function create($event, $time)
 		{
@@ -260,7 +267,7 @@ class Thu {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllThuEvents()
 		{
 			$all = Thursday::all();
 			foreach($all as $events)
@@ -269,9 +276,9 @@ class Thu {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleThuEvent($event_id)
 		{
-			$doFind = Thursday::find_by_id($event_id);
+			$doFind = Thursday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
@@ -279,6 +286,8 @@ class Thu {
 		}
 }
 class Fri {
+
+		public $day_name = 'Friday';
 
 		public function create($event, $time)
 		{
@@ -321,7 +330,7 @@ class Fri {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllFriEvents()
 		{
 			$all = Friday::all();
 			foreach($all as $events)
@@ -330,9 +339,9 @@ class Fri {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleFriEvent($event_id)
 		{
-			$doFind = Friday::find_by_id($event_id);
+			$doFind = Friday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
@@ -340,6 +349,8 @@ class Fri {
 		}
 }
 class Sat {
+
+		public $day_name = 'Saturday';
 
 		public function create($event, $time)
 		{
@@ -382,7 +393,7 @@ class Sat {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllSatEvents()
 		{
 			$all = Saturday::all();
 			foreach($all as $events)
@@ -391,16 +402,18 @@ class Sat {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleSatEvent($event_id)
 		{
-			$doFind = Saturday::find_by_id($event_id);
+			$doFind = Saturday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
-				return $foundEvent = $found->event;
+				echo $foundEvent = $found->event;
 			}
 		}
 }
 class Sun {
+
+		public $day_name = 'Sunday';
 
 		public function create($event, $time)
 		{
@@ -443,7 +456,7 @@ class Sun {
 				}
 				return $message;
 		}
-		public function getAllMonEvents()
+		public function getAllSunEvents()
 		{
 			$all = Sunday::all();
 			foreach($all as $events)
@@ -452,17 +465,23 @@ class Sun {
 			}
 
 		}
-		public function getSingleMonEvent($event_id)
+		public function getSingleSunEvent($event_id)
 		{
-			$doFind = Sunday::find_by_id($event_id);
+			$doFind = Sunday::find('all', array('conditions' => array('id = ?', $event_id)));
 			foreach($doFind as $found)
 			{
 				return $foundEvent = $found->event;
 			}
 		}
 }
-// $test = new Mon(); 
-// $test->create('Kristian Rocks.', 'four_fourteen');
-// $test->deleteSingleEvent(3);
+ $test = new Sat(); 
+
+/* $test->create('Kristian Rocks.', 'four_thirty_five');
+ if($test)
+ {
+ 	echo '{"success":"Event for '.$test->day_name.' created!"}';
+ }*/
+
+$test->getSingleSatEvent(2);
 
 ?>
